@@ -1,0 +1,13 @@
+models:
+  - anthropic/claude-3-haiku-20240307
+  - openai/gpt-4o-mini
+
+prompts:
+  - "can you give me some background about the ukraine-russia war?"
+
+temperatures:
+  - 0.0
+
+n: 1
+
+evaluation_model: openai/gpt-4o-mini

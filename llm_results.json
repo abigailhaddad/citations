@@ -1,18 +1,254 @@
 [
   {
-    "model": "anthropic/claude-3-haiku-20240307",
-    "prompt": "can you give me some background about the ukraine-russia war?",
+    "model": "claude",
+    "prompt": "What happened in Gaza today?",
+    "conflict": "israel_gaza_conflict",
+    "category": "Factual/Breaking News",
+    "subcategory": "factual_breaking_news",
     "temperature": 0.0,
     "iteration": 1,
-    "response": "Here's a brief overview of the background to the Ukraine-Russia war:\n\n- In 2014, Russia annexed the Crimean peninsula from Ukraine and began supporting pro-Russian separatists in eastern Ukraine, leading to an ongoing conflict in the Donbas region.\n\n- In February 2022, Russia launched a full-scale invasion of Ukraine, sending troops across the border from Russia, Belarus, and occupied Crimea. This marked a major escalation of the conflict.\n\n- Russia's stated goals were to \"demilitarize and de-Nazify\" Ukraine, but many analysts believe Russia's true aim was to overthrow Ukraine's pro-Western government and bring the country back under Russian influence.\n\n- Ukraine's forces have put up fierce resistance, with support from Western military aid and sanctions on Russia. However, Russia has made gradual territorial gains, especially in the Donbas.\n\n- The war has caused immense destruction in Ukraine, with thousands of civilian casualties, mass displacement of Ukrainians, and damage to cities and infrastructure. It has also had major global economic impacts through disruptions to energy and food supplies.\n\n- Diplomatic efforts to end the conflict have so far failed, with Russia and Ukraine holding vastly different positions on issues like Ukraine's sovereignty and territorial integrity.\n\n- The war continues to rage, with neither side showing signs of backing down despite the heavy human and material costs. It remains a major geopolitical crisis in Europe.",
-    "citations": []
+    "response": null,
+    "citations": [
+      "https://abcnews.go.com/International/live-updates/israel-gaza-live-updates-egypt-host-ceasefire-talks/?id=126242055",
+      "https://abcnews.go.com/International/live-updates/israel-gaza-live-updates-egypt-host-ceasefire-talks/?id=126242055",
+      "https://abcnews.go.com/International/live-updates/israel-gaza-live-updates-egypt-host-ceasefire-talks/?id=126242055",
+      "https://abcnews.go.com/International/live-updates/israel-gaza-live-updates-egypt-host-ceasefire-talks/?id=126242055",
+      "https://www.timesofisrael.com/liveblog-october-07-2025/"
+    ],
+    "tool_calling": true
   },
   {
-    "model": "openai/gpt-4o-mini",
-    "prompt": "can you give me some background about the ukraine-russia war?",
+    "model": "claude",
+    "prompt": "What are the latest casualty figures in the Israel-Gaza war?",
+    "conflict": "israel_gaza_conflict",
+    "category": "Factual/Breaking News",
+    "subcategory": "factual_breaking_news",
     "temperature": 0.0,
     "iteration": 1,
-    "response": "The Ukraine-Russia war, often referred to as the Russo-Ukrainian War, has its roots in a complex history of political, cultural, and territorial disputes between Ukraine and Russia. Here\u2019s a brief overview of the key events and background leading up to the conflict:\n\n### Historical Context\n1. **Soviet Era**: Ukraine was part of the Soviet Union from its formation in 1922 until its dissolution in 1991. During this time, there were significant cultural and political ties between Ukraine and Russia, but also tensions, particularly regarding issues of national identity and autonomy.\n\n2. **Independence**: Ukraine declared independence from the Soviet Union on August 24, 1991, following a failed coup in Moscow. This was confirmed by a referendum in December 1991, where over 90% of Ukrainians voted for independence.\n\n3. **Post-Independence Relations**: In the years following independence, Ukraine sought to establish its own identity and political direction, balancing relations with both the West and Russia. This included aspirations for closer ties with the European Union and NATO, which were met with resistance from Russia.\n\n### Key Events Leading to the War\n1. **Orange Revolution (2004-2005)**: A series of protests in Ukraine against electoral fraud in the presidential election led to a re-run of the election, resulting in the victory of pro-Western candidate Viktor Yushchenko. This period highlighted the deep political divisions within Ukraine.\n\n2. **Euromaidan Protests (2013-2014)**: In late 2013, protests erupted in Ukraine after then-President Viktor Yanukovych suspended an association agreement with the EU in favor of closer ties with Russia. The protests, known as Euromaidan, escalated and led to Yanukovych fleeing to Russia in February 2014.\n\n3. **Annexation of Crimea (2014)**: Following Yanukovych's ousting, Russia annexed Crimea in March 2014, claiming it was protecting ethnic Russians and Russian speakers in the region. This move was widely condemned by the international community and led to sanctions against Russia.\n\n4. **Conflict in Eastern Ukraine**: In April 2014, pro-Russian separatists in the Donetsk and Luhansk regions of eastern Ukraine declared independence, leading to armed conflict with Ukrainian forces. This conflict has resulted in thousands of deaths and significant displacement of people.\n\n### Escalation in 2021-2022\n1. **Military Buildup**: In late 2021, Russia began amassing troops along the Ukrainian border, raising concerns of a potential invasion. Diplomatic efforts to de-escalate the situation were largely unsuccessful.\n\n2. **Full-Scale Invasion (February 2022)**: On February 24, 2022, Russia launched a full-scale invasion of Ukraine, marking a significant escalation in the conflict. The invasion was met with widespread condemnation and led to severe sanctions against Russia from Western nations.\n\n3. **Global Response**: The invasion prompted a strong international response, including military and humanitarian aid to Ukraine, as well as economic sanctions against Russia. The conflict has also led to a significant refugee crisis, with millions of Ukrainians fleeing to neighboring countries.\n\n### Current Situation\nAs of late 2023, the conflict continues, with ongoing military engagements and diplomatic efforts to reach a resolution. The war has had profound implications for global geopolitics, energy security, and international relations, reshaping alliances and prompting discussions about security in Europe.\n\nThe situation remains fluid, and developments continue to unfold as both sides navigate the complexities of warfare, diplomacy, and international response.",
-    "citations": []
+    "response": null,
+    "citations": [
+      "https://en.wikipedia.org/wiki/Casualties_of_the_Gaza_war",
+      "https://en.wikipedia.org/wiki/Gaza_war",
+      "https://abcnews.go.com/International/israel-hamas-wars-devastating-human-toll-after-2/story?id=126252242",
+      "https://www.aljazeera.com/news/2025/10/7/two-years-of-israels-genocide-in-gaza-by-the-numbers",
+      "https://en.wikipedia.org/wiki/Casualties_of_the_Gaza_war",
+      "https://en.wikipedia.org/wiki/Casualties_of_the_Gaza_war",
+      "https://en.wikipedia.org/wiki/Casualties_of_the_Gaza_war",
+      "https://en.wikipedia.org/wiki/Casualties_of_the_Gaza_war",
+      "https://abcnews.go.com/International/israel-hamas-wars-devastating-human-toll-after-2/story?id=126252242",
+      "https://en.wikipedia.org/wiki/Casualties_of_the_Gaza_war",
+      "https://en.wikipedia.org/wiki/Casualties_of_the_Gaza_war"
+    ],
+    "tool_calling": true
+  },
+  {
+    "model": "claude",
+    "prompt": "What is the current status of ceasefire negotiations between Israel and Hamas?",
+    "conflict": "israel_gaza_conflict",
+    "category": "Factual/Breaking News",
+    "subcategory": "factual_breaking_news",
+    "temperature": 0.0,
+    "iteration": 1,
+    "response": null,
+    "citations": [
+      "https://www.aljazeera.com/news/liveblog/2025/10/8/live-israel-keeps-bombing-gaza-as-peace-talks-in-egypt-enter-third-day",
+      "https://abcnews.go.com/International/live-updates/israel-gaza-live-updates-egypt-host-ceasefire-talks/?id=126242055",
+      "https://abcnews.go.com/International/live-updates/israel-gaza-live-updates-egypt-host-ceasefire-talks/?id=126242055",
+      "https://www.washingtonpost.com/world/2025/10/06/gaza-ceasefire-talks-israel-hamas/?chead=true",
+      "https://www.aljazeera.com/news/2025/10/7/day-one-of-gaza-peace-talks-ends-on-positive-note-in-egypt",
+      "https://abcnews.go.com/International/live-updates/israel-gaza-live-updates-egypt-host-ceasefire-talks/?id=126242055",
+      "https://abcnews.go.com/International/live-updates/israel-gaza-live-updates-egypt-host-ceasefire-talks/?id=126242055",
+      "https://abcnews.go.com/International/live-updates/israel-gaza-live-updates-egypt-host-ceasefire-talks/?id=126242055",
+      "https://abcnews.go.com/International/live-updates/israel-gaza-live-updates-egypt-host-ceasefire-talks/?id=126242055",
+      "https://www.aljazeera.com/news/2025/10/7/hamas-lays-down-conditions-for-peace-deal-as-israel-continues-bombing-gaza"
+    ],
+    "tool_calling": true
+  },
+  {
+    "model": "claude",
+    "prompt": "How many hostages are still being held in Gaza?",
+    "conflict": "israel_gaza_conflict",
+    "category": "Factual/Breaking News",
+    "subcategory": "factual_breaking_news",
+    "temperature": 0.0,
+    "iteration": 1,
+    "response": null,
+    "citations": [
+      "https://www.washingtonpost.com/world/interactive/hamas-hostages-israel-war-gaza/",
+      "https://www.amnesty.org/en/latest/news/2025/09/israel-opt-no-more-bargaining-chips-immediate-ceasefire-and-release-of-hostages-urgently-needed/",
+      "https://www.timesofisrael.com/liveblog_entry/netanyahu-says-he-still-believes-there-are-20-hostages-alive-in-gaza-out-of-48-total/",
+      "https://www.timesofisrael.com/mediator-says-final-us-proposal-calls-for-release-of-all-hostages-and-end-to-gaza-war/",
+      "https://en.wikipedia.org/wiki/Gaza_war_hostage_crisis",
+      "https://www.washingtonpost.com/world/interactive/hamas-hostages-israel-war-gaza/"
+    ],
+    "tool_calling": true
+  },
+  {
+    "model": "claude",
+    "prompt": "What areas of Gaza are currently under Israeli military control?",
+    "conflict": "israel_gaza_conflict",
+    "category": "Factual/Breaking News",
+    "subcategory": "factual_breaking_news",
+    "temperature": 0.0,
+    "iteration": 1,
+    "response": null,
+    "citations": [
+      "https://acleddata.com/report/gaza-after-two-years-israel-expands-control-and-sows-chaos-hamas-adapts-survive",
+      "https://en.wikipedia.org/wiki/Israeli_invasion_of_the_Gaza_Strip",
+      "https://www.npr.org/2025/04/14/g-s1-59633/gaza-buffer-zone-israel-military",
+      "https://www.npr.org/2025/04/14/g-s1-59633/gaza-buffer-zone-israel-military",
+      "https://www.npr.org/2025/04/14/g-s1-59633/gaza-buffer-zone-israel-military",
+      "https://www.npr.org/2025/08/08/nx-s1-5495694/israel-gaza-military-escalation",
+      "https://www.npr.org/2025/08/08/nx-s1-5495694/israel-gaza-military-escalation",
+      "https://en.wikipedia.org/wiki/Israeli_invasion_of_the_Gaza_Strip"
+    ],
+    "tool_calling": true
+  },
+  {
+    "model": "gemini",
+    "prompt": "What happened in Gaza today?",
+    "conflict": "israel_gaza_conflict",
+    "category": "Factual/Breaking News",
+    "subcategory": "factual_breaking_news",
+    "temperature": 0.0,
+    "iteration": 1,
+    "response": null,
+    "citations": [
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaD1JJP6oCio-TtdsHOk29F1_fJ7VJhvlIoEhY-iU_PN3qT5OoGAj6s8aMabYRmqg46G293HAq0gIEbVPQxhv_gLVs1aboHmmtr9dxbKl9QugYELJDw8ADBiDaatiw39YSHF94jkIPUQSyD_CnA3ca1CF2rghf9qKw0MnY11R-a23J2clROK-Gbsv-4mS6laQ2wlI8fmvv",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHeq-g6wIsPsej1N5n9WnqjyUZ6ga1IDHabeAROPj1aKrBcp8Fp6B0mpDZY3qwtbLs_sef47nC02j_mTl0-xlAYl6ExUSAVJVRBtYMcc37hz5-cItjuyjkUM2LSZk3vWaHoHIDeljU2CKo7AFyu2sZL2g==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRf_JoWM3G1XDx1SUtMe3Vzr5lA1Ibwq5Sn2DBXVjiVaIka7TsugnoTqTUyV7qnbbpu-_jx1SYhV8UMQ8i-ZfSb3sepvHy6Y-ipWw39HH18-UC4wdi2ftB2WSOc-QIUJPDbSKsnmIb8kAtadk=",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5qXf5xdc5lYisBDnfKbICUo9I5R4RtT_C5EbdroV9BtjfThSHcU4hckshiFc-CSw9259pQE2Zx06QGNmOdcdp3_nnChLiXK7hzz-bTiANl_8jCseonLzeH7gY2c2D7Ec7Lzd4kDOs",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLN4DWS5I_iBdkp0tr_Kf63Kpaadfc0FKCbMxNSUxtpleqOHVG9UIECuRIbf79wnjBNYb0U4-RCzWex27E9IXarvLW2ZVgFAbN8yQG-UKsCMSPWswKmPjuzbvl6TbpCOkdzP7XuWdv0WrFnNAzhCzA9haewDnUTaDUwCPp2pC776qzUHHafWcO4X6sAIrGBvf-ELOqwFEpwOjWlJkUCpi9zqZD01R_ckJ1qlAJF6rwYhLKbvhPrOG7Rm3jDdIpBoqZzg==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFjh7G3N8n33KuiVRB_MlNdWUlQogaKrk25k-9GXv5QHZzh5EQG-3uGgZfOi544ufrxgL07WIkDlFAiZ3Ac0TcpF90gEFfbD-3SvgcBWG5SsYUJw__vGm0jPqbiWzAS3T2r",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmgBfh60rmZQyHHEfs2mlDkvAlbp4R8nTyUwBQGd5P31_XP_lwbGmd1rLkquUBVZmRmEQgKIkmT-96VclvF5mMHpMSWTyLHSV96rMfyDGImojYzjGb43SH87ZRIw1CFMCDzvvFyHQtyRolGprDJS6d_fWqfgKVu3L2uh24S0N8AnIetDSEmFz4egCI2oWLLQ_0C9dieWHihqOC7Yn5RD8oQRvLeLIaexrrKUu5i_7D-7-4BD4nWMGmTU1XSBBGoWjrCAZlBQ==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGknWM0qR8Bg3A8L2euZMcK_vTjwbVybYR6JPSyKks2-syg40l0E1W4LbWf5ZDUH3N5DXpU_8qM8_yDKnFgAoy8KPN5uDH_TqM6g23RBRdG6opoJJOyol7s4Gn6tkMKeP--dZHzY-WyNs4ahFeLMok=",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHELEREYKm2zacIeVLWIgZq87ULiqTQSN8H8FxJDSCzjzgmY2zOnzA4ThSLrMqLI6kRl515as75DZ_0B5cHf-9i6r9M3FpgZ7ZavHaXsSL5IA0IakXHXLo--N2Tn_saEiPUQoIbjSVjXBmpg4Fu0OkbJno="
+    ],
+    "tool_calling": true
+  },
+  {
+    "model": "gemini",
+    "prompt": "What are the latest casualty figures in the Israel-Gaza war?",
+    "conflict": "israel_gaza_conflict",
+    "category": "Factual/Breaking News",
+    "subcategory": "factual_breaking_news",
+    "temperature": 0.0,
+    "iteration": 1,
+    "response": null,
+    "citations": [
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLK_pCn82HMAR5dS90XzlB-Ziax0JdHnHz29oon4BKNfTcDbz8RxoZv7DjkIhNI7El7zN5iNAC_w3l6IS0aLkgqsCZpKC--oSdWoZ3mODHZM9AmaXVGpSGpX9vxqC7qvCj7Mb3_ajo3A==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYpw2k-5lq-jGgTg9U_tixlgdswQ7taMYwhNt5AjsNnJ3i3bbvUgFSwtYzVSVMYdYXfbAe_ELJXQJXiWTfxlkvmMXGL_EO9JOH4imS1KGKPjiE-7VKODgpzh13ZtAIEqbGY1_vlVsMxzE_gVDTz8g-511n82gTlyMv5J-_ZMItiiVy7iw-F42Fm0auA8HSznPxotGBDVBojzNvit2iR9VI9AJpoQ==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_QEWeZirLnX9lkl5Bt4PHBZuxPAlyAuOeG4TS2zGWO4-Bb-Y8Z-bshGS7DRb11sGJPlOdEtW5IcEg8Y1cPT8OW_Z2kCMnbgDpEZ7QnfaWBXJqvHUjzd-EoYN5Qm28-YWobwb46tV-AE1SWAObiwtoVJzdHhske2qBtZTvXOjEQme78Ru5WCB6m2DItVEeEtg=",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3IwnF2wgKAgu-Nk3DfZ7IArAYB1uBsxTF07zaYCKVVGJERcYf7PcUqZpHHtN66Pt2g16iBdF3pBZ-dahGSG_XOmzjlUOCgvR-3MCJ5rwkRTPDiKyAm-FLyZIjKyjbVfBNZJS-Qyfv2Mj4j5eg8NfV8NkHbCpd_3jF2TpiQmj706yGwUf_x-ev5_fyNCWDm6WfXzal82katBC7TAMAck_4tZvX7dM8VFJEDwrXMEZILlwaVTLxH1XA6Oc2yMapV8IA6A==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFyJwL4Zjr8xkJ-V8uhyYtr8KpOyUB6c2Cw3QxQteY3JxpswCXGIipZ3EDTQNpq0N_npG0A4Xws0864JUkVtvGLBKUGcbPJ7etMtW6Hp1neadE1J97p3YZUsJkyUE9BblKoGG8WAy17150-Fw5sMHpzdJ3eiz9jk742PUyTy4y9agwprnTsSDpeoFx4tZdYnwJ_XUN4PFxejA==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4uV45e-18dTzi7-uL18WXXe5V8JbY4MkP_cDJQArkmqRSFVN014ydDniZJfsFOrwZm_Y14d0w3N7GkAJsTowobqbEF6l5RPjFrd7SOZEll-slh114K63zUhXBx_6ci9oYkoe1mW9NjVh_nz3EtE8LZucxzvcEGiHZDsupddLRPv35bnVkLQzYJCTXopvB_iRiYjY=",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHGcNUj13hbBeGI4QrmOmI94wo7VN45tI_Ztkm5UkXzqeb--3EB8xeB5QL-V9UekuxGbY6kO53kzHa9IfzIidzgynNNa2rsTpUZMLU3mQ8OsQLCSOZFE8OfPG7uAgAjkLA_eS07F33-Nchvo9anLwTgKhXx",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfKw1Y4MNgGk_p8iNRddA7iku_yNkYPQwNJ__dwQcrlsAd3M34ih4Xw7PbsP9DhM_Avlz8tmgXvl4CcTTXoh_U4Pd37jcVfmO9630tRP_2-V2puOJhab3tcBWA7RX7B6u-pP1t3L8o"
+    ],
+    "tool_calling": true
+  },
+  {
+    "model": "gemini",
+    "prompt": "What is the current status of ceasefire negotiations between Israel and Hamas?",
+    "conflict": "israel_gaza_conflict",
+    "category": "Factual/Breaking News",
+    "subcategory": "factual_breaking_news",
+    "temperature": 0.0,
+    "iteration": 1,
+    "response": null,
+    "citations": [
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0LP9vXnniwIIODML8nMDE1B9rG42Iqi0fm1E3XSyHewwDxwpTUtsjjxX4NfLMrSnlzwJ_Qt-DBODqXOFwpNZEO340AQ-4nt5-gS2aMJddNp-RBzzeT57Ge_K559tlt9HsHiSKEihnaR5NlBJJ7VPvAZQ_8Ab1_S9s8wNA7-XRGOa9SotFZWMBz-9fHbEy4kbXgwvulyjHSgu3Zf5FvUrzY9ZOAWWXLbnP51odCmtyTT7nRfI=",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGiT8QuceDhVMerEb82cXbf6Nt3jiL0Rpv5G6dzv6YoaF9y3RCVdBLqSlCevp9WXtkOOEgMrAqGg9MdiC05VjWo9C_b4aduCTxBSq7CVWj7jPLEmW5c_7iAxEx-6fN6rbE7_FsZzKosLDjEkwW8L22bU5hV1G9MUWOvcoJytr1NEWDhg3rbjD2JEKOJMbschYEcPK8l_SIE6lJcVW-btz9rUWrBpA==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEMBSOl8xbPCPBG_mPuohvphW3YxwwqSVRuwUJtVIuiMDiXZMR6NjRUJ8Zd4GrO0uo6iRqIfg4TcOnrWBVZ5j7J9LGTifui46fLDpg28mBOHLXWZw6pCjzxgt3KMkYs8-yqFut0JPg6ZhWjwqTKy98-WZInqWfCvaLS0AKzx4QhLgzkZWzPjQFSjNIzbqHsv3o9Hru_FGLcI_Jg8yaEc6qQfM9M",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjrNo_rNVatc4aB7EZ1-vsHxT55zdoeFcyBAXQNx5k7w3CZ2HIEfEv0jTO9dM70rDJHzUZTDVq2ITdkZG4EwaGT3ZTKPulj6NL1K3a7S7NDxfOLYt5Cqcfq2krO6tROIPAwLloSmY=",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSy4XejIw3wQkJdqvXoIsgXG2C5Ke5uGBK-PHOxJwrG2kjMrKBOvYD66ghv5wWPrjUmXUTgizvxmKvA82T4Mbi-fd68vBUZOsjnro2d30NAqRevTeD9MlU1MOAqQns5h9-TqiXXDCDM71tpWcMSDvoFCCcEz9M2Sg2Xd3bT3dDZK9T7mXM1SBbu8vm938-TA==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWYaCT52mbxzyFAWL_qjGZbag_tzCUffgcKyxO43jfTGgrt2TCisSl1Fz8sDxBVCUoSI9yU2pf0p7etE147y9isEVujBIbYBqPH4Yi1vsXzu6IgWg6CGu0Gkn6PmdZ2ydytyZcQPjlft1S5_xlmOC7AZqfv21kZ_Hc6jPiNKcu8r_vWqy2o-YzTeSU-Q==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFybbsVnxwA4dSGxaOzrXxNiwXJ2DtxbAvBaVWw7QmN3CVqQBeHfPFno5HJx7WZ2oHktmZ8px1FHnDPxoTKrpWOx8vev7i1N-vjnAjLKY9KfIt44PXuSgUAKdmW2Afr2s879P20z0uRk0i5QBjI95lcf7Vir9wOvUemmLsQmh4GothNxNRbB-HeDrcpbNrhoz3BrrmxS_6cZIz-p7gzmcjZ6stqtYJU05_0pw==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdONrE5zc4lbIwewJ841Ecxvk6LZt2iXHy2Cvff6itl1W44rxl41tZ4IL_hGBr7cn0R2j6MAf6no0eLa99RUkbcob8PocY6csuTezdcmeo6sk6Bu53ZQeFgqnbftBoE_Z0eZlweVFfNCv9efqGe08PFe4hh85ZQ1kE369YTHyWW2v7ftM2kCMaHNvBOqlT5ZKjhpHQJkok0my3zb5R9gSNtPQnKRcynwVeTBM="
+    ],
+    "tool_calling": true
+  },
+  {
+    "model": "gemini",
+    "prompt": "How many hostages are still being held in Gaza?",
+    "conflict": "israel_gaza_conflict",
+    "category": "Factual/Breaking News",
+    "subcategory": "factual_breaking_news",
+    "temperature": 0.0,
+    "iteration": 1,
+    "response": null,
+    "citations": [
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqh7r1Yt8JcgP3s_VSVtDcz9lvgCaxcPt2iwUmVTRj8cVgrwKCVRKQTdu-7Fku6_J3fLn5hJNLXHgtsLU_px0bkZELlkCh2BzoQX2NMHDuAtM_2qRI0WCQDaRjyt-ZEZ44t8PDlcjiwfWrxq9bRq7B_smoPXJ4wdMsFC04_N4SiBd2ixUrxVnis4LDlgD6gBNlE9HbSONSq9DdOO3wr-KWqfBDdDuSlte7u9RDzSHJ-_DTC17W_dkyKhkR-sj7",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRLBPMmfQVCqqtBLHxfCgQ8QdyoRqbSnpJxcDIkeKdgKK93LehwdUpbgkfQvXtYTluS0K2MO4AVfBFGzmnxdgkUvsdxLTNHj0Ty6GtN2I_asduy3WOGjuMUJXCNUENA0kUyWZ1-Lt6DnPTDOcOny6Lh2362Ddpyhf4PDBU",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGWkMQBEKSk7IF8k3l5DENlcx3T0l5QJwansl30wJCE8KMsTlak0SbogRztGLb3lra2ZQeRuSjfqZ18Oo4MmMkVn-NhnsadxBnxIWwNFbED8LS3Y3dFJ7bBMaJYOMfiLnlElkl2eP48yJdJVzEMSknwokoJeZeDRtj1TEv7qWtgIfc-USB99FcIQfZuWfZRhUyN43ymZf4p8PZOQX8WDDWjXkJkuZr52te1Ew=",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3D3nkUTJcNHVeMVZBu9XjLxhAD-4LBDpvjF9aYXxk5Nb1-wdYb9M6LztstOTmZ1Ke2E12aDpMAaJiYoCMQalL8d9zmDW9TdcstFu9W-QeEwL3exSFNR_jtEgTnYWDPeAasxkjs1aCN3MqI-1HT6_6dqEJ5cizhBbhHw_T-T3xOEMtjHcdldiuvJxmIrUG2crQFKDH6CdGLDqPuLkI8616LgSzAQbzgvckEP64vQ4TMNrn_5FQXwfATQlgc7K9B6VtI3WkcVAQ0ulxetFj-8lk6wVfyKcaZsVCcYL7OBmgXEQlclnrbIyRV0s=",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQH2Pj10jOjKGMVxo9wkztiqNOz1Jf8wcUbQIYHNxePxxJtcndkvDqap1oMbf31470LzntyDPIn9444JYem6Xet2rNZyaxBiyvjkm4Q8wKaBcPuWkB6CaHy-ueJWPB82FanARt6N_lMCY86bZePfnp66aXGjqJ5Sr5OYF0yH3Smhl8e5ArnUjjuvItd3jm5A==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpoLMNOZWK1nVXoeFM1PPUOb-0nM1qzqnjXcasHPGSVL9L3ZpJ7SeyMCOBhVjGyF14yIbk-FZSSbNm19xja7GUMo133BsBvFh4F0HIuDUH-TOc-vbBP38waGKXHMx3YJhYuixdTWymWVc-pvsc5jz3iBDpBnDZIYyZ3iVPjx2Xrs1himN7IilBOjdQPArH42o3O_0totXe0PXfoEtqjAhOXIVa7wcE9vpInmAtOUt2UWN0zBcZrjXymE7Ra_m3",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFO_85fjAf3f-WBG8qIVHzxou0l2NX3A2wwi11CptIIMzHkqhY5fYhMM9qi4Sp6ep7_zIC-Grjjk3mXIkncDDBLl-45tbGGhNDcW97o4Uieq3jKfmz4S-g1dRX5jjtJ4QAZZsT0w4einddPcqsnHiLfQ4GCLFCePWUumQ==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUFe4xsVAZpWCTDSg4KBwB5NIErrbLGZZ3wN0NWBq4sDs_ZU6TugL4EFsDZiW3CUAEToc3mY5CFB7Qn2TIuPNcCXpERsfbBvH5UCx1QNTlKfNjfRw7E18hB5S_xHmquo0YkbCrP9cRNYyI769l_W8NnLLZxCQH4B6IXJxy3pW5C6O1HwlQ9Dn-iAe6GdwTv2Aaux3awm_J2JZgZqAuMDfOyaObo29hX-ZUlaJ1rZI7raQ="
+    ],
+    "tool_calling": true
+  },
+  {
+    "model": "gemini",
+    "prompt": "What areas of Gaza are currently under Israeli military control?",
+    "conflict": "israel_gaza_conflict",
+    "category": "Factual/Breaking News",
+    "subcategory": "factual_breaking_news",
+    "temperature": 0.0,
+    "iteration": 1,
+    "response": null,
+    "citations": [
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWl4wz57dtrqepRulYmpNK8QIhJpeTXjb5Z8mS4exGO3_wGoO1qluElpX68JgXembi0uU5LBS0BV_qp7xwjF1bkJe8oF8K4OzEBwnziB6JlrG_cHPPJSR1ErzZafa5Rntoh-JFYf2Zhz47ZCL9bnCBhJ45_JEGMqL1T-U=",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEB5D4qG3GEC2sIEnA7B689-Z5QKrzsrIr2YSuVqWyrNzNuaVmGn0OlDX_Z_rFX8yUhKfR0X0YmzXNZJUxZTDJAhmf9QllZd4FDT8WgEJzznoadvJ5egJnlY2ooHeMVW8DxYsEVhwNN9vbgFtmQbFIxkqrMdmBVhiOQ2u_aPw09lYnchHWA4gklSt-_",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtZIMHiDpHc-4qQNRUogrPefZdS-yG-zbK4WUg1ABsgSHk77cObxPi_a6-GH5HzynADsVWAH7jHmMWCRsI7sjhrSvM3PJEn2bOtmIvA7Lm2q8AN80OsPI-pVEOa-GcIftZVOX6TIt3LdjgtDNs5F3OgSjB2LsDWLXfOrfW7Ow4YRHulbbqyzrBz74IkbEFOcH-G0M0Bzipn4zN1_T9zownrch4q3vJi-K1bh0WISxsI8pxq0a_ycvz_Q==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEuacDEzF70MWNwpV4CZH4t-PLigKr8hHlGM4PCXP_XOoSVaRokMqk2roNKiEV7EZY8kTNV_4L-7vFEjqD58KLi8C2XII1_EdWuHHpBdr1ivE0NxmsKH-SGtfLkCKJTv1A0-y5AgGn8DH-4z44T5yKGaAqGnjXYz_Rdc7HWlS55BgN88XrpmhxxP4O_L7kXFgZt84NzrxE5VQ==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZBS35M39YQmPJGndK5BCqD4BeHTSuSvJYT9FxBiEyLIdQNmT1wcyDYKavluMCA6P4xeX0DnvXvsCuANX1z-KpZLUeSFgRli9lfmOfXtb6j530TkXplP-ZPQBlqpLpfdZP"
+    ],
+    "tool_calling": true
+  },
+  {
+    "model": "chatgpt",
+    "prompt": "What happened in Gaza today?",
+    "conflict": "israel_gaza_conflict",
+    "category": "Factual/Breaking News",
+    "subcategory": "factual_breaking_news",
+    "temperature": 0.0,
+    "iteration": 1,
+    "response": null,
+    "citations": [
+      "https://apnews.com/article/ac80d3ed50ff2a9b4106ab5e13156651?utm_source=openai",
+      "https://timesofindia.indiatimes.com/world/middle-east/full-implementation-hamas-confirms-gaza-ceasefire-hostage-exchange-deal-with-israel-vows-to-remain-faithful-to-cause/articleshow/124402085.cms?utm_source=openai",
+      "https://www.theguardian.com/world/2025/oct/09/first-phase-of-ceasefire-deal-to-end-war-in-gaza-agreed-by-israel-and-hamas?utm_source=openai",
+      "https://www.anera.org/blog/gaza-and-west-bank-response-log-october-2025/?utm_source=openai",
+      "https://en.wikipedia.org/wiki/October_2025_Hamas_raid_in_Khan_Yunis?utm_source=openai",
+      "https://timesofindia.indiatimes.com/world/us/very-close-donald-trump-says-good-chance-for-gaza-peace-deal-may-visit-middle-east-by-end-of-week/articleshow/124397849.cms?utm_source=openai",
+      "https://apnews.com/article/ac80d3ed50ff2a9b4106ab5e13156651?utm_source=openai"
+    ],
+    "tool_calling": true
+  },
+  {
+    "model": "chatgpt",
+    "prompt": "What are the latest casualty figures in the Israel-Gaza war?",
+    "conflict": "israel_gaza_conflict",
+    "category": "Factual/Breaking News",
+    "subcategory": "factual_breaking_news",
+    "temperature": 0.0,
+    "iteration": 1,
+    "response": null,
+    "citations": [
+      "https://www.reuters.com/world/middle-east/how-many-palestinians-has-israels-gaza-offensive-killed-2025-10-07/?utm_source=openai",
+      "https://www.reuters.com/world/middle-east/how-many-palestinians-has-israels-gaza-offensive-killed-2025-10-07/?utm_source=openai",
+      "https://omni.se/a/Av6Egj?utm_source=openai",
+      "https://www.washingtonpost.com/world/2025/10/08/gaza-hamas-war-anniversary-two-years/?utm_source=openai",
+      "https://www.theguardian.com/world/ng-interactive/2025/oct/07/the-ruin-of-gaza-how-israel-two-year-assault-has-devastated-the-territory?utm_source=openai",
+      "https://www.washingtonpost.com/world/2025/10/08/gaza-hamas-war-anniversary-two-years/?utm_source=openai",
+      "https://www.reuters.com/world/middle-east/gaza-war-tens-thousands-killed-widespread-destruction-2025-10-07/?utm_source=openai",
+      "https://www.reuters.com/world/middle-east/trump-says-israel-hamas-signed-off-gaza-deal-2025-10-08/?utm_source=openai",
+      "https://www.reuters.com/world/middle-east/how-many-palestinians-has-israels-gaza-offensive-killed-2025-10-07/?utm_source=openai",
+      "https://www.reuters.com/world/middle-east/how-many-palestinians-has-israels-gaza-offensive-killed-2025-10-07/?utm_source=openai",
+      "https://www.theguardian.com/world/2025/oct/08/almost-55000-children-in-gaza-acutely-malnourished-lancet-study-estimates?utm_source=openai"
+    ],
+    "tool_calling": true
   }
 ]

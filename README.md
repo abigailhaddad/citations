@@ -1,6 +1,6 @@
 # LLM Citation Extractor
 
-A tool that makes LLM calls with different parameters and extracts news source citations from the responses.
+A tool that uses Claude, Gemini, and ChatGPT APIs with web search tools to extract website citations from responses about geopolitical conflicts.
 
 ## Setup
 
@@ -8,25 +8,29 @@ A tool that makes LLM calls with different parameters and extracts news source c
 ```bash
 python3 -m venv venv
 source venv/bin/activate
-pip install litellm pyyaml python-dotenv
+pip install -r requirements.txt
 ```
 
-2. Add your API keys to `.env`:
+2. Create a `.env` file with your API keys:
 ```
-OPENAI_API_KEY=your_openai_key_here
 ANTHROPIC_API_KEY=your_anthropic_key_here
+GEMINI_API_KEY=your_gemini_key_here
+OPENAI_API_KEY=your_openai_key_here
 ```
 
 ## Configuration
 
-Edit `config.yml` to set:
-- `models`: List of models to test in `provider/model` format (e.g., `openai/gpt-4o-mini`, `anthropic/claude-3-haiku-20240307`)
-- `prompts`: Questions to ask the models
-- `temperatures`: Temperature values to test
+Edit `config.yml` to customize:
+- `prompts`: Organized by conflict type and question category (factual/breaking news, historical context, analysis/opinion)
+- `temperatures`: Temperature values to test 
 - `n`: Number of iterations per combination
-- `evaluation_model`: Model used to extract citations
+- `top_n`: Optional - limit to first N prompts for testing (set to `null` for all prompts)
 
-LiteLLM supports many providers and models. See the full list at https://docs.litellm.ai/docs/providers. Make sure to add the appropriate API key to your `.env` file for each provider you use.
+The tool includes 80 prompts across 4 conflicts:
+- Israel/Gaza conflict
+- Ukraine/Russia war
+- China/Taiwan tensions  
+- Iran women's rights protests
 
 ## Usage
 
@@ -36,29 +40,24 @@ python main.py
 ```
 
 This will:
-1. Make LLM calls for each model/prompt/temperature/iteration combination
-2. Extract citations from each response using structured output
+1. Make tool-calling API requests to Claude, Gemini, and ChatGPT
+2. Extract website citations from web search results
 3. Save results to `llm_results.json`
 
-## Testing
-
-Test the citation extraction function:
-```bash
-python test_evaluation.py
-```
+For quick testing, set `top_n: 5` in `config.yml` to run only the first 5 prompts.
 
 ## Output
 
-Results are saved in `llm_results.json` with this structure:
+Results include metadata for analysis:
 ```json
 {
-  "model": "openai/gpt-4o-mini",
-  "prompt": "What are the top 3 news stories today?",
+  "model": "claude",
+  "prompt": "What happened in Gaza today?",
+  "conflict": "israel_gaza_conflict", 
+  "category": "Factual/Breaking News",
+  "subcategory": "factual_breaking_news",
   "temperature": 0.0,
   "iteration": 1,
-  "response": "...",
-  "citations": ["CNN", "BBC", "Reuters"]
+  "citations": ["https://example.com/..."]
 }
 ```
-
-The citation extractor looks for specific outlet names mentioned in the text, not generic references like "news reports" or "sources".

@@ -10,6 +10,9 @@ import os
 import json
 import yaml
 import itertools
+import pandas as pd
+import requests
+from playwright.sync_api import sync_playwright
 from dotenv import load_dotenv
 import anthropic
 import openai
@@ -18,6 +21,64 @@ from google.genai import types
 
 # Load environment variables
 load_dotenv()
+
+def resolve_redirect_url(url: str) -> str:
+    """Resolve Google redirect URLs to their final destination"""
+    if not url.startswith('https://vertexaisearch.cloud.google.com/grounding-api-redirect/'):
+        return url
+    
+    print(f"Resolving redirect: {url[:80]}...")
+    
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            page = browser.new_page()
+            
+            final_url = url
+            
+            # Capture response events to track redirects - but only for main document navigation
+            def handle_response(response):
+                nonlocal final_url
+                # Only process main document requests, not resources like images/js/css
+                if response.request.resource_type == 'document':
+                    # If this is a redirect, capture the Location header
+                    if response.status in [301, 302, 303, 307, 308]:
+                        location = response.headers.get('location')
+                        if location:
+                            # Make absolute URL if needed
+                            if location.startswith('http'):
+                                final_url = location
+                            else:
+                                from urllib.parse import urljoin
+                                final_url = urljoin(response.url, location)
+                    elif response.url != url:
+                        # Final destination
+                        final_url = response.url
+            
+            page.on('response', handle_response)
+            
+            # Block all resource loading except main document to speed up and avoid noise
+            page.route("**/*", lambda route: route.abort() if route.request.resource_type != 'document' else route.continue_())
+            
+            # Navigate but abort as soon as we get the redirect
+            try:
+                page.goto(url, timeout=15000)
+            except Exception:
+                # Even if navigation fails, we might have captured the redirect
+                pass
+            
+            browser.close()
+            
+            if final_url != url:
+                print(f"✓ Resolved to: {final_url}")
+                return final_url
+            else:
+                print(f"✗ No redirect found")
+                return url
+                
+    except Exception as e:
+        print(f"✗ Playwright error: {e}")
+        return url
 
 def load_config(config_file="config.yml"):
     """Load configuration from YAML file"""
@@ -51,7 +112,7 @@ def search_claude(query: str) -> list[str]:
             for citation in block.citations:
                 citations.append(citation.url)
 
-    return citations
+    return list(set(citations))  # Remove duplicates
 
 def search_gemini(query: str) -> list[str]:
     """Query Google Gemini with Google Search grounding and extract website citations"""
@@ -79,7 +140,9 @@ def search_gemini(query: str) -> list[str]:
             if hasattr(candidate.grounding_metadata, 'grounding_chunks'):
                 for chunk in candidate.grounding_metadata.grounding_chunks:
                     if hasattr(chunk, 'web') and chunk.web and hasattr(chunk.web, 'uri'):
-                        citations.append(chunk.web.uri)
+                        # Resolve Google redirect URLs to actual destinations
+                        resolved_url = resolve_redirect_url(chunk.web.uri)
+                        citations.append(resolved_url)
 
     return list(set(citations))  # Remove duplicates
 
@@ -105,7 +168,7 @@ def search_chatgpt(query: str) -> list[str]:
                             if annotation.type == "url_citation" and hasattr(annotation, 'url'):
                                 citations.append(annotation.url)
 
-    return citations
+    return list(set(citations))  # Remove duplicates
 
 def main():
     """Main execution function"""
@@ -191,6 +254,28 @@ def main():
     output_file = "llm_results.json"
     with open(output_file, 'w') as f:
         json.dump(results, f, indent=2)
+    
+    # Create CSV in long format with one row per citation
+    csv_rows = []
+    for result in results:
+        for citation in result['citations']:
+            csv_rows.append({
+                'model': result['model'],
+                'prompt': result['prompt'],
+                'conflict': result['conflict'],
+                'category': result['category'],
+                'subcategory': result['subcategory'],
+                'temperature': result['temperature'],
+                'iteration': result['iteration'],
+                'citation': citation
+            })
+    
+    # Save to CSV using pandas
+    if csv_rows:
+        df = pd.DataFrame(csv_rows)
+        csv_file = "llm_citations.csv"
+        df.to_csv(csv_file, index=False)
+        print(f"CSV saved to {csv_file}")
     
     print(f"\nCompleted! Results saved to {output_file}")
     print(f"Total successful calls: {len(results)}")
